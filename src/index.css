@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container form>input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+}
+
+.upload {
+    padding: 7px;
+    border: 1px solid rgba(0, 128, 0, 0.165);
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: .25s;
+}
+
+.delete {
+    padding: 7px;
+    border: 1px solid rgba(0, 128, 0, 0.165);
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: .25s;
+}
+
+.delete:hover {
+    background-color: #fff;
+    color: red;
+    transition: .25s;
+    -webkit-box-shadow: 4px 4px 24px 5px rgba(0, 128, 0, 0.2);
+    -moz-box-shadow: 4px 4px 24px 5px rgba(0, 128, 0, 0.2);
+    box-shadow: 4px 4px 24px 5px rgba(0, 128, 0, 0.2);
+}
+
+
+.upload:hover {
+    background-color: #fff;
+    color: green;
+    transition: .25s;
+    -webkit-box-shadow: 4px 4px 24px 5px rgba(0, 128, 0, 0.2);
+    -moz-box-shadow: 4px 4px 24px 5px rgba(0, 128, 0, 0.2);
+    box-shadow: 4px 4px 24px 5px rgba(0, 128, 0, 0.2);
+}
+
+.pdf_watch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.pdf_container {
+    min-height: 500px;
+    background-color: #dbdbdb;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
